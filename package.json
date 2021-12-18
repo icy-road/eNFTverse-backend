@@ -1,0 +1,41 @@
+{
+  "name": "NFTWebGenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node DEBUG=NFTWebGenerator:* src/app.js",
+    "start-dev": "cross-env DEBUG=NFTWebGenerator:* NODE_ENV=dev nodemon src/app.js",
+    "migrate": "cross-env DEBUG=NFTWebGenerator:* npm run job migrate",
+    "job": "cross-env DEBUG=NFTWebGenerator:* PROCESS_NAME=jobs node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dev-dependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "aes-cbc": "^1.0.1",
+    "async-busboy": "^1.0.1",
+    "busboy": "latest",
+    "cross-env": "^7.0.3",
+    "debug": "^4.3.2",
+    "dotenv": "^10.0.0",
+    "ipfs-http-client": "^49.0.4",
+    "joi": "^17.4.1",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.13.3",
+    "mongoose-paginate-v2": "^1.4.1",
+    "request": "^2.88.2",
+    "superagent": "^6.1.0",
+    "swig": "latest",
+    "umzug": "^2.3.0",
+    "uuid": "^8.3.2",
+    "web3": "^1.4.0"
+  }
+}
