@@ -16,7 +16,7 @@ module.exports = {
             user: 'root',
             ref  : 'origin/main',
             repo : 'git@github.com:icy-road/eNFTverse-backend.git',
-            path : '/root/repositories',
+            path : '/root/repositories/eNFTverse-backend',
             'post-deploy' : 'npm install && pm2 startOrRestart ecosystem.config.js --env staging',
         }
     }
