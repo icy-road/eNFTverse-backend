@@ -12,12 +12,12 @@ module.exports = {
 
     deploy : {
         staging : {
-            host: '165.227.245.56',
+            host: '157.230.26.1',
             user: 'root',
             ref  : 'origin/main',
-            repo : 'git@github.com:narcis2007/NFTWebGenerator.git',
+            repo : 'git@github.com:icy-road/eNFTverse-backend.git',
             path : '/root/repositories',
-            'post-deploy' : 'npm install && pm2 startOrRestart ecosystem.config.js --env staging && npm run job migrate',
+            'post-deploy' : 'npm install && pm2 startOrRestart ecosystem.config.js --env staging',
         }
     }
 };
