@@ -7,7 +7,8 @@ module.exports = {
         },
         env_prod: {
             NODE_ENV: "prod",
-        }
+        },
+        interpreter : 'node@17.3.0'
     }],
 
     deploy : {
