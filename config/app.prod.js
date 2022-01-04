@@ -5,7 +5,7 @@ const config = {
     name: 'eNFTverse backend prod',
   },
   ipfs: {
-    nodeURL: 'http://159.89.212.246:5001',
+    nodeURL: 'http://159.89.212.246:5001', // todo: create our own ipfs cluster/node
     publicGatewayURLPrefix: 'https://gateway.ipfs.io/ipfs',
     internalGatewayURLPrefix: 'http://159.89.212.246:8080/ipfs',
   }
