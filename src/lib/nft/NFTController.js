@@ -26,6 +26,7 @@ class NFTController extends Controller {
    return {
      publicMetadataUrl: `${this.publicGatewayURLPrefix}/${ipfsMetadataHash}`,
      internalMetadataUrl: `${this.internalGatewayURLPrefix}/${ipfsMetadataHash}`,
+     ipfsMetadataHash,
    }
   }
 }
@@ -35,7 +36,7 @@ NFTController.validatorSchemas = {
     .keys({
       image: Joi.any().required(),
       external_url: Joi.string().optional(),
-      author: Joi.string(),
+      author: Joi.string().optional(),
       name: Joi.string(),
       description: Joi.string(),
       attributes: Joi.array().items(Joi.object()).optional(),
