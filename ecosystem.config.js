@@ -7,7 +7,9 @@ module.exports = {
         },
         env_prod: {
             NODE_ENV: "prod",
-        }
+        },
+        instances : 1,
+        exec_mode : 'cluster'
         // interpreter : 'node@16.13.1'
     }],
 
