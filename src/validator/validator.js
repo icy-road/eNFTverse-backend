@@ -86,7 +86,7 @@ function middleware(joiSchema, options = {}) {
       body: { ...ctx.request.body },
     };
 
-    if(ctx.request.headers['content-type']?.split(';')[0]==='multipart/form-data'){
+    if(ctx.request.headers['content-type'].split(';')[0]==='multipart/form-data'){
       const {files, fields} = await asyncBusboy(ctx.req);
       inputData.formData = fields;
       files.forEach(file =>inputData.formData[file.fieldname]=file);

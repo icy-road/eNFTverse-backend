@@ -1,6 +1,6 @@
 module.exports = {
     apps : [{
-        name: 'nft-service',
+        name: 'eNFTverse-backend',
         script: './index.js',
         env_staging:{
             NODE_ENV: "prod",
