@@ -18,6 +18,6 @@ app.use(errorHandler);
 app.use(routes);
 
 
-app.listen(8008 , () => { //todo: from config
+app.listen(8080 , () => { //todo: from config
     console.log(`Listening to ${8008 }`);
 });
