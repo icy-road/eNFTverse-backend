@@ -1,10 +1,12 @@
 const Koa = require('koa');
+const cors = require('@koa/cors');
 const bodyParser = require('koa-bodyparser');
 const routes = require('./routes');
 const { mongooseInstance } = require('./models');
 const errorHandler = require('./common/errorHandler');
 
 const app = new Koa();
+app.use(cors());
 
 app.context.mongooseInstance = mongooseInstance;
 
